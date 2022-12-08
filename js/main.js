@@ -140,7 +140,7 @@ for(let k=0;k<nav.length;k++){
 window.addEventListener('scroll',()=>{ // 윈도우에서 스크롤을 움직이면
     let scroll = document.querySelector('html').scrollTop; // 스크롤 값구하기
 
-    for(i=0;i<nav.length;i++){//스크롤 값에 따라서 클래서 함수발생.
+    for(i=0;i<nav.length;i++){//스크롤 값에 따라서 클래스 함수발생.
         if(scroll>=(i*devHeight) && scroll< [(i+1)*devHeight]){
             act(i,nav); 
         }
