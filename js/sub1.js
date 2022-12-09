@@ -36,7 +36,6 @@ const mob_Btn = document.querySelector('.mob_btn')
 const mob_Hd = document.querySelector('.mob_hd')
 
 mob_Btn.addEventListener('click',e=>{
-    e.preventDefault();
     e.currentTarget.classList.toggle('on')
     if(mob_Btn.classList.contains('on')){
         mob_Hd.classList.add('on')
@@ -56,7 +55,6 @@ const mob_li_ul_li = document.querySelectorAll('.mob_hd>ul>li>ul>li')
         console.log(all)
 for(let i=0;i<mob_li.length;i++){
     mob_li[i].addEventListener('click',e=>{
-        e.preventDefault();
         e.currentTarget.classList.toggle('on')
 //클래스on붙여진 li 하위 ul열릴때 하위li높이값 X 하위li갯수 가져와서 하위 ul높이로 설정
         if(mob_li[i].classList.contains('on')){

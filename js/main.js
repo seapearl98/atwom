@@ -9,6 +9,8 @@ hd_ul.addEventListener('mouseout',()=>{
     hd_wrap.classList.remove('on')
 })
 
+
+
 // 모바일 버튼기능
 const mob_Btn = document.querySelector('.mob_btn')
 const bg = document.querySelector('.bg')
@@ -37,7 +39,6 @@ const mob_li_ul_li = document.querySelectorAll('.mob_hd>ul>li>ul>li')
         console.log(all)
 for(let i=0;i<mob_li.length;i++){
     mob_li[i].addEventListener('click',e=>{
-        e.preventDefault();
         e.currentTarget.classList.toggle('on')
 //클래스on붙여진 li 하위 ul열릴때 하위li높이값 X 하위li갯수 가져와서 하위 ul높이로 설정
         if(mob_li[i].classList.contains('on')){
@@ -179,3 +180,7 @@ let actv = (index,con3_li)=>{
         el.classList.remove('on')
     }
 }
+
+document.querySelector('.content1').addEventListener("load",()=>{
+    EventTarget.classList.add('on')
+})
