@@ -1370,8 +1370,10 @@ section.on>.cont2_in>.art5{opacity: 1; animation: con2_ani 1.3s ease;}
 /* art1,2 */
 .cont2_in>article p{font-size: 21px;}
 .cont2_in>article .txt{font-size: 16px; font-family: arial;}
-.cont2_in>article>p>a{position: absolute; right: 50px; transform: scale(1.3); transition: all 0.3s ease;}
-.cont2_in>article>p>a:hover{transform: rotate(90deg) scale(1.3);}
+.cont2_in>.art1>p>a{position: absolute; right: 50px; transform: scale(1.3); transition: all 0.3s ease;}
+.cont2_in>.art1>p>a:hover{transform: rotate(90deg) scale(1.3);}
+.cont2_in>.art2>p>a{position: absolute; right: 50px; transform: scale(1.3); transition: all 0.3s ease;}
+.cont2_in>.art2>p>a:hover{transform: rotate(90deg) scale(1.3);}
 .cont2_in>article>h3{font-size: 30px; height: 100px; font-weight: 550;
     overflow: hidden; margin-top: 28px; line-height: 1.2;}
 .cont2_in>article>.txt{width: 414px; height: 104px; overflow: hidden; margin-top: -20px;}
@@ -1382,7 +1384,15 @@ section.on>.cont2_in>.art5{opacity: 1; animation: con2_ani 1.3s ease;}
 .cont2_in>article>.btn_wrap>a:hover{color: #222; background: #fff;}
 
 /* art3 */
-.art3 .txt{width: 222px; margin-top: 10px;}
+.art3{padding: 10px;}
+.art3>.art3_inner{
+    width: 60%;
+    display: flex; flex-direction: column;}
+.art3>.art3_inner>p{font-size: 15px;}
+.art3>.art3_inner>p:nth-child(1){font-size: 21px; padding-bottom: 10px;}
+
+.art3>p{display: block; border: 1px solid #000;}
+.art3 .txt{width: 100%;}
 .art3:hover img{display: inline-block; animation: ani 0.7s linear infinite 0s;}
 @keyframes ani {
     0%{transform: translateX(0);}
